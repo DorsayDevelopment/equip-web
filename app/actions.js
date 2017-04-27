@@ -24,7 +24,6 @@
 })();
 
 function submitted() {
-  console.log('submitted');
   const submitted = document.querySelector('#submit');
   const email = document.querySelector('#email');
   
