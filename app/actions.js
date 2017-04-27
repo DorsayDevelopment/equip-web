@@ -26,7 +26,10 @@
 function submitted() {
   console.log('submitted');
   const submitted = document.querySelector('#submit');
+  const email = document.querySelector('#email');
   
   submitted.innerHTML = 'Thanks!';
   submitted.className += 'submitted';
+
+  email.style.display = 'none';
 }
