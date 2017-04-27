@@ -27,6 +27,7 @@
   margin-top: 20px;
   padding: 10px;
   user-select: none;
+  letter-spacing: 3px
 }
 
 #submit:hover, .submitted {
