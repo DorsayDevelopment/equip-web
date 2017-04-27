@@ -15,9 +15,18 @@
         email: email.value
       })
     }).then(function(response) {
-      // console.log(response);
+      // animate
+      submitted();
     }).then(function(error) {
       // console.log(error);
     });
   });
 })();
+
+function submitted() {
+  console.log('submitted');
+  const submitted = document.querySelector('#submit');
+  
+  submitted.innerHTML = 'Thanks!';
+  submitted.className += 'submitted';
+}

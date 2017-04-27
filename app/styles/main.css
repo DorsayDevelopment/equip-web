@@ -4,10 +4,12 @@
   justify-content: center;
   flex-direction: column;
   /*width: 100%;*/
+
+  font-family: 'Raleway', sans-serif;
 }
 
 .container div {
-  display: flex;
+  display: flex; 
 }
 
 .logo img {
@@ -17,7 +19,6 @@
 }
 
 #submit {
-  display: block;
   cursor: pointer;
 
   background-color: white;
@@ -27,9 +28,23 @@
 
   margin-top: 20px;
   padding: 10px;
+  user-select: none;
 }
 
-#submit:hover {
-  background-color: black;
-  color: white;
+#submit:hover, .submitted {
+  background-color: black !important;
+  color: white !important;
+}
+
+.submitted {
+  cursor: default !important;
+  user-select: none;
+}
+
+#email {
+  text-align: center;
+}
+
+#email:focus {
+  outline-width: 0;
 }
