@@ -1,10 +1,11 @@
 (function() {
+  const apiUrl = 'https://api.equiprental.rocks';
   const submitButton = document.querySelector('#submit');
 
   submitButton.addEventListener('click', function() {
     const email = document.querySelector('#email');
 
-    fetch('http://localhost:9000/subscribers', {
+    fetch(apiUrl + '/subscribers', {
       method: 'POST',
       mode: 'cors',
       headers: {
