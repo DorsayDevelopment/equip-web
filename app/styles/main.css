@@ -1,6 +1,6 @@
 @font-face {
-    font-family: Poppins;
-    src: url(/fonts/Poppins-Light.ttf);
+  font-family: Poppins;
+  src: url(/fonts/Poppins-Light.ttf);
 }
 
 .container {
@@ -9,6 +9,9 @@
   justify-content: center;
   flex-direction: column;
   font-family: 'Raleway', sans-serif;
+
+  --primary-color: #403f44;
+  --letter-spacing: 4vw;
 }
 
 .container div {
@@ -54,4 +57,17 @@
 
 #email:focus {
   outline-width: 0;
+}
+
+h1 {
+  text-transform: uppercase;
+  border: var(--primary-color) solid 0.5vw;
+  color: var(--primary-color);
+  letter-spacing: var(--letter-spacing);
+  font-size: 8vw;
+  display: inline;
+  font-weight: normal;
+
+  padding: 50px;
+  padding-left: calc(50px + var(--letter-spacing));
 }
